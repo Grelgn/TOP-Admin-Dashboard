@@ -9,7 +9,7 @@ body {
 }
 
 .sidebar {
-    background-color: lightskyblue;
+    background-color: #0ea5e9;
     grid-row: span 2;
     display: grid;
     font-size: 20px;
@@ -52,15 +52,15 @@ svg {
 }
 
 .header {
-    background-color: azure;
     display: grid;
     grid-template-columns: 5fr 3fr;
     grid-template-rows: 3fr 4fr;
-    height: 14.6vh;
+    padding-bottom: 1vh;
+    position: relative;
+    z-index: 10;
 }
 
 .search {
-    background-color: coral;
     display: grid;
     grid-auto-flow: column;
     align-content: center;
@@ -72,7 +72,7 @@ svg {
 }
 
 .search > input {
-    background-color: lightgray;
+    background-color: #e2e8f0;
     border: none;
     border-radius: 16px;
     height: 125%;
@@ -80,14 +80,13 @@ svg {
 }
 
 .notif {
-    background-color: cornflowerblue;
     display: grid;
     grid-auto-flow: column;
     align-content: center;
     justify-content: end;
     align-items: center;
     gap: 2vw;
-    padding: 0 4vw;
+    padding: 1vh 4vw;
 }
 
 img {
@@ -96,7 +95,6 @@ img {
 }
 
 .greeting {
-    background-color: cornsilk;
     display: grid;
     grid-auto-flow: column;
     align-content: center;
@@ -117,7 +115,6 @@ img {
 }
 
 .buttons {
-    background-color: burlywood;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-content: center;
@@ -128,7 +125,7 @@ img {
 
 button {
     border: none;
-    background-color: royalblue;
+    background-color: #0ea5e9;
     color: white;
     font-weight: bold;
     border-radius: 16px;
@@ -137,14 +134,13 @@ button {
 }
 
 .main-content {
-    background-color: beige;
+    background-color: #e2e8f0;
     display: grid;
     grid-template-columns: 5fr 2fr;
     grid-template-rows: 1fr 1fr;
 }
 
 .projects {
-    background-color: aquamarine;
     display: grid;
     grid-row: span 2;
     grid-template: 2fr 9fr 9fr 9fr 2fr / 1fr 1fr;
@@ -165,7 +161,7 @@ button {
     align-content: space-around;
     justify-items: end;
     padding: 2vw 1vw 1vw 2vw;
-    border-left: 10px solid orange;
+    border-left: 10px solid #fbbf24;
 }
 
 .project p, .announce p {
@@ -180,7 +176,6 @@ button {
 }
 
 .announcements {
-    background-color: cadetblue;
     display: grid;
     grid-template-rows: 2fr 9fr;
     padding-right: 2vw;
@@ -207,10 +202,6 @@ button {
     margin: 0;
 }
 
-.trending {
-    background-color: yellowgreen;
-}
-
 .trending > p {
     margin: 1vh 0;
     font-size: 20px;
@@ -230,4 +221,8 @@ button {
 
 .trend > div > div {
     color: gray;
+}
+
+.header, .project, .announce , .trend {
+    box-shadow: 3px 3px 3px #cbd5e1;
 }
