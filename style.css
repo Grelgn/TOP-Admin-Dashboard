@@ -168,7 +168,7 @@ button {
     border-left: 10px solid orange;
 }
 
-.project p {
+.project p, .announce p {
     font-weight: normal;
     font-size: 14px;
     color: gray;
@@ -181,6 +181,30 @@ button {
 
 .announcements {
     background-color: cadetblue;
+    display: grid;
+    grid-template-rows: 2fr 9fr;
+    padding-right: 2vw;
+    padding-bottom: 2.5vw;
+}
+
+.announce {
+    font-size: 14px;
+    border-radius: 10px;
+    background-color: white;
+    display: grid;
+    padding: 1vw 2vw;
+    align-content: space-between;
+}
+
+.line {
+    border-bottom: 1px solid gray;
+}
+
+.projects > p, .announcements > p {
+    position: relative;    
+    top: 3.5vh;
+    font-size: 20px;
+    margin: 0;
 }
 
 .trending {
