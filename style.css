@@ -59,10 +59,6 @@ svg {
     height: 14.6vh;
 }
 
-.main-content {
-    background-color: beige;
-}
-
 .search {
     background-color: coral;
     display: grid;
@@ -90,8 +86,8 @@ svg {
     align-content: center;
     justify-content: end;
     align-items: center;
-    gap: 1.5em;
-    padding: 0 3vw;
+    gap: 2vw;
+    padding: 0 4vw;
 }
 
 img {
@@ -127,7 +123,7 @@ img {
     align-content: center;
     justify-items: center;
     gap: 1vw;
-    padding: 0 2vw 0 4vw;
+    padding: 0 2vw;
 }
 
 button {
@@ -138,4 +134,55 @@ button {
     border-radius: 16px;
     height: 2.5em;
     width: min(8vw, 100px)
+}
+
+.main-content {
+    background-color: beige;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.projects {
+    background-color: aquamarine;
+    display: grid;
+    grid-row: span 2;
+    grid-template: 2fr 9fr 9fr 9fr 2fr / 1fr 1fr;
+    row-gap: 1.3vw;
+    column-gap: 1.1vw;
+    padding: 0 1.1vw;
+}
+
+.projects > p {
+    grid-column: span 2;
+    display: grid;
+}
+
+.project {
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    align-content: space-around;
+    justify-items: end;
+    padding: 2vw 1vw 1vw 2vw;
+    border-left: 10px solid orange;
+}
+
+.project p {
+    font-weight: normal;
+    font-size: 14px;
+    color: gray;
+}
+
+.project svg {
+    width: 3em;
+    height: 1.5em;
+}
+
+.announcements {
+    background-color: cadetblue;
+}
+
+.trending {
+    background-color: yellowgreen;
 }
